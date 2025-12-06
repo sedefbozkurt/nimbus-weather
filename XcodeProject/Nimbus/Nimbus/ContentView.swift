@@ -10,10 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("API KEY: \(Bundle.main.infoDictionary?["API_KEY"] as? String ?? "none")")
         }
         .padding()
     }
